@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#B4E2F1"
+    android:orientation="vertical"
+    tools:context=".jokenpo.JokenpoActivity">
+
+    <ImageView
+        android:id="@+id/image_view_comp"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/bender" />
+
+    <TextView
+        android:id="@+id/txt_name_comp"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_comp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Computer"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/image_play_comp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_name_comp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        tools:src="@drawable/tesoura" />
+
+    <TextView
+        android:id="@+id/txt_vs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/home_font"
+        android:text="VS."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_play_comp"
+        android:textColor="@color/black"
+        android:textSize="100sp" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_vs"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/btn_papel"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:src="@drawable/papel" />
+
+        <ImageView
+            android:id="@+id/btn_pedra"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:src="@drawable/pedra" />
+
+        <ImageView
+            android:id="@+id/btn_tesoura"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:src="@drawable/tesoura" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_you"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_layout"
+        android:text="You"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/image_you"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_you"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        tools:src="@drawable/batman" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

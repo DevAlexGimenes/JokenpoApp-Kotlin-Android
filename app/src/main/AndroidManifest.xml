@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.JokenpôOriginal">
-        <activity android:name=".MainActivity">
+        <activity android:name=".jokenpo.JokenpoActivity"></activity>
+        <activity android:name=".select_character.ChooseCharacterActivity" />
+        <activity android:name=".home.HomeActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".splash_screen.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
