@@ -24,6 +24,6 @@
         android:fontFamily="@font/home_font"
         android:text=""
         android:textColor="@color/white"
-        android:textSize="20sp" />
+        android:textSize="15sp" />
 
 </LinearLayout>
